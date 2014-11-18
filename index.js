@@ -4,9 +4,9 @@ var runningsubtotal, runningtax, runningtotal;
 runningsubtotal=0
 runningtax=0
 runningtotal=0
-function Register(x){
+function Register(item){
   var subtotal, total, tax;
-  subtotal = x;
+  subtotal = item;
   tax=x * .07
   total= subtotal + tax;
   runningsubtotal=runningsubtotal+subtotal;
@@ -23,5 +23,23 @@ i=i+1
 function clear() {
 runningtotal=0;
 runningsubtotal=0;
-runningtax=0
+runningtax=0;
+}
+function hamburger(){
+	Register('hamburger');
+	}
+function cheeseburger(){
+	Register('cheeseburger');
+}
+function corndog(){
+	Register('crondog');
+}
+function drink(){
+	Register('drink');
+}
+function sundae(){
+	Register('sundae');
+}
+function coffee(){
+	Register('coffee');
 }
