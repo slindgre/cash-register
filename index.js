@@ -14,9 +14,14 @@ function Register(x){
   runningtotal=runningtotal+total
 }
 var i=1
-function clear() {
+function confirm() {
 runningtotal=0;
 runningsubtotal=0;
 runningtax=0
 i=i+1
+}
+function clear() {
+runningtotal=0;
+runningsubtotal=0;
+runningtax=0
 }
