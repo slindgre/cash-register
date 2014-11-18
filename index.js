@@ -6,8 +6,8 @@ runningtax=0
 runningtotal=0
 function Register(item){
   var subtotal, total, tax;
-  subtotal = item;
-  tax=x * .07
+  subtotal = prices[item];
+  tax=prices[item] * .07;
   total= subtotal + tax;
   runningsubtotal=runningsubtotal+subtotal;
   runningtax=runningtax+tax;
